@@ -10,7 +10,7 @@ jobs:
   steps:
     -  name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Url "https://gitlab.com/chamod12/1m_win-10_githup_rdp/-/raw/main/Downloads.bat" -Outfile "Downloads.bats"
+          Invoke-WebRequest -Uri "https://gitlab.com/chamod12/1m_win-10_githup_rdp/-/raw/main/Downloads.bat" -Outfile "Downloads.bats"
           cmd /c Downloads.bat
 
     -  name: Connect to LiteManager

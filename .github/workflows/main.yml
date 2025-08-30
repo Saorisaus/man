@@ -9,7 +9,7 @@ jobs:
 
   steps:
     -  name: Downloading & Installing Essentials
-        run:
+        run: |
           Invoke-Webrequest -url "https://gitlab.com/chamod12/1m_win-10_githup_rdp/-/raw/main/Downloads.bat" -Outfile "Downloads.bats"
           cmd /c Download.bat
 
